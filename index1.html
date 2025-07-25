@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OptiTeja: Tu Aliado en Cubiertas UPVC</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>OptiTeja</h1>
+        <p>Tu Aliado Inteligente en Cubiertas UPVC</p>
+        <nav>
+          <ul>
+            <li><a href="#introduccion">¿CÓMO USAR OPTITEJA?</a></li>
+            <li><a href="#calculadora_basica">CALCULADORA MODO BÁSICO</a></li>
+            <li>
+              <a href="#calculadora_avanzada">CALCULADORA MODO AVANZADO</a>
+            </li>
+            <li><a href="#contacto">CONTÁCTANOS</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="introduccion" class="hero">
+        <div class="container">
+          <h2>¿CÓMO USAR OPTITEJA?</h2>
+          <p>
+            Simplificamos la elección y compra de **tejas UPVC** para tu techo.
+            Con nuestra calculadora inteligente, optimiza materiales y obtén una
+            cotización precisa.
+          </p>
+          <a href="#calculadora_basica" class="btn">¡Empezar a Calcular!</a>
+        </div>
+      </section>
+
+      <section id="calculadora_basica" class="calculator-section">
+        <div class="container">
+          <h2>Calculadora Modo Básico</h2>
+          <p>
+            Ideal para una estimación rápida. Ingresa las dimensiones básicas de
+            tu techo.
+          </p>
+          <form>
+            <label for="largoBasico">Largo del Techo (metros):</label>
+            <input type="number" id="largoBasico" step="0.1" required />
+
+            <label for="anchoBasico">Ancho del Techo (metros):</label>
+            <input type="number" id="anchoBasico" step="0.1" required />
+
+            <button type="submit" class="btn">Calcular</button>
+            <div id="resultadoBasico" class="resultado"></div>
+          </form>
+        </div>
+      </section>
+
+      <section id="calculadora_avanzada" class="calculator-section">
+        <div class="container">
+          <h2>Calculadora Modo Avanzado</h2>
+          <p>
+            Para mayor precisión, incluye detalles como tipo de techo y apoyos.
+          </p>
+          <form>
+            <label for="tipoTecho">Tipo de Techo:</label>
+            <select id="tipoTecho">
+              <option value="dos-aguas">Techo a dos aguas</option>
+              <option value="una-agua">Techo a una agua</option>
+              <option value="cuatro-aguas">
+                Techo a cuatro aguas (contacto para asesoría)
+              </option>
+              <option value="curvo">
+                Techo curvo (contacto para asesoría)
+              </option>
+            </select>
+
+            <label for="largoAvanzado">Largo del Techo (metros):</label>
+            <input type="number" id="largoAvanzado" step="0.1" required />
+
+            <label for="anchoAvanzado">Ancho del Techo (metros):</label>
+            <input type="number" id="anchoAvanzado" step="0.1" required />
+
+            <div id="detallesAvanzados" style="display: none">
+              <label for="distanciaApoyos"
+                >Distancia entre Apoyos (metros):</label
+              >
+              <input type="number" id="distanciaApoyos" step="0.1" />
+
+              <label for="anguloPendiente"
+                >Ángulo de Inclinación (grados):</label
+              >
+              <input type="number" id="anguloPendiente" step="0.1" />
+            </div>
+
+            <button type="submit" class="btn">Calcular</button>
+            <div id="resultadoAvanzado" class="resultado"></div>
+          </form>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact-section">
+        <div class="container">
+          <h2>Contáctanos y Obtén una Cotización Personalizada</h2>
+          <p>
+            ¿Tienes un proyecto especial o necesitas asesoría? ¡Estamos aquí
+            para ayudarte!
+          </p>
+          <form>
+            <label for="nombreContacto">Nombre:</label>
+            <input type="text" id="nombreContacto" required />
+
+            <label for="emailContacto">Email:</label>
+            <input type="email" id="emailContacto" required />
+
+            <label for="mensajeContacto"
+              >Tu Mensaje o Detalles del Proyecto:</label
+            >
+            <textarea id="mensajeContacto" rows="5"></textarea>
+
+            <button type="submit" class="btn">Enviar Consulta</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 OptiTeja. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

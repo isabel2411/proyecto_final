@@ -1,0 +1,1 @@
+document.getElementById("my_navbar").innerHTML = ``
